@@ -1,253 +1,261 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-    <!-- Import Google Icon Font -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="css/materialize.min.css" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MISAMO — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <style>
-      body {
-        background: url(img/bg1.jpg);
-        display: inline-block center;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.2em;
-        transition: height 1s;
-      }
-      .video {
-        text-align: center;
-        margin: 0;
-        font-size: 1.5em;
-        z-index: 1;
-      }
-      p {
-        text-align: none;
-      }
-      div .row {
-        border-radius: 36px;
-        padding: 400px;
-      }
-      div .row .h2 {
-        border-style:dashed#a00404;
-      }
-      div .brand-logo {
-        display: flex;
-        justify-content: center;
-        padding-top: 40%;
-        text-align: center;
-        opacity: .8;
-        align-items: center;
-        font-size: 5em;
-      }
-      header {
-        background: url(img/misamo.jfif);
-        background-size: cover;
-        background-position: center;
-        min-height: 100%;
-        padding: none;
-      }
-      .insta {
-        text-align: justify;
-        padding: 70px;
-        text-transform: uppercase;
-      }
-      .phots {
-        margin: 70px;
-        text-align: center;
-      }
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">MISAMO</a>
+      <ul class="nav-links">
+        <li><a href="homepagemisamo.html" class="active">Home</a></li>
+        <li><a href="aboutopagemisamo.html">About</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="https://www.allkpop.com/article/2023/07/twice-misamos-masterpiece-tops-itunes-charts-in-more-than-20-countries" target="_blank" rel="noopener">News</a></li>
+      </ul>
+      <div class="socials">
+        <a href="https://www.instagram.com/twicetagram/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/JYPETWICE" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/JYPETWICE" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.tiktok.com/@twice_tiktok_official?lang=en" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <button class="menu-btn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
 
-      .tabs .indicator {
-        background-color: #1a237e;
-      }
-      .tabs .tab a:focus, .tabs .tab a:focus.active {
-        padding: 2px;
-      }
-      .gallery {
-        padding: 15px;
-        max-width: 1100px;
-        margin: 0 auto;
-        background: transparent;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-        grid-auto-rows: 250px;
-      }
+  <header class="hero" style="background-image:url(img/misamo.jfif)">
+    <div class="hero-inner">
+      <span class="label">Twice sub-unit — Momo / Sana / Mina</span>
+      <h1>Misamo</h1>
+      <div class="cta">
+        <a href="#mv" class="btn primary">Watch the M/V</a>
+        <a href="aboutopagemisamo.html" class="btn">About the unit</a>
+      </div>
+    </div>
+  </header>
 
-      .gallery div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-    </style>
-    <title>di pinapansin, ingay sa tabi</title>
-  </head>
-  <body>
-    <!-- navbar -->
-    <header>
-      <nav class="nav-wrapper transparent">
-        <div class="container">
-          <a href="firstpagemisamo.html" class="brand-logo center"><b>MISAMO</b></a>
-          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="hide-on-med-and-down">
-            <li><a href="aboutopagemisamo.html">About</a></li>
-            <li><a href="#photo">Photos</a></li>
-            <li><a href="https://www.allkpop.com/article/2023/07/twice-misamos-masterpiece-tops-itunes-charts-in-more-than-20-countries">News</a></li>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="https://www.instagram.com/twicetagram/" class="tooltipped btn-floating btn-small pink lighten-1" data-tooltip="Instagram">
-                <i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.facebook.com/JYPETWICE" class="tooltipped btn-floating btn-small blue darken-4" data-tooltip="Facebook">
-                <i class="fab fa-facebook"></i>
-              </a></li>
-              <li><a href="https://twitter.com/JYPETWICE" class="tooltipped btn-floating btn-small blue lighten-1" data-tooltip="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a></li>
-              <li><a href="https://www.tiktok.com/@twice_tiktok_official?lang=en" class="tooltipped btn-floating btn-small black" data-tooltip="Tiktok">
-                <i class="fab fa-tiktok"></i>
-              </a></li>
-            </ul>
-            
-
-          </ul>
-          <ul class="sidenav grey lighten-2" id="mobile-menu">
-            <li><a href="aboutopagemisamo.html">About</a></li>
-            <li><a href="#photo">Photos</a></li>
-            <li><a href="https://www.allkpop.com/article/2023/07/twice-misamos-masterpiece-tops-itunes-charts-in-more-than-20-countries">News</a></li>
-          </ul>
+  <section id="mv">
+    <div class="wrap">
+      <div class="section-title">
+        <span class="num">01</span><h2>Music Videos</h2><p>All official MISAMO M/Vs (2023–2026)</p>
+      </div>
+      <div class="mv-stage" data-mv-stage>
+        <button type="button" class="mv-poster" data-mv-play aria-label="Play Confetti Music Video">
+          <img src="https://i.ytimg.com/vi/gOjG-70-D5o/maxresdefault.jpg" alt="MISAMO Confetti Music Video">
+          <span class="mv-play"><i class="fas fa-play"></i>&nbsp; Play M/V</span>
+        </button>
+      </div>
+      <div class="mv-meta">
+        <div>
+          <h3 data-mv-title>Confetti</h3>
+          <span class="mv-sub" data-mv-sub>PLAY · 2026 · JYP Entertainment</span>
         </div>
-      </nav>
-    </header>
-
-    <div class="video">
-
-      <video src="img/misamo.mp4" height="800" width="900" controls muted></video>      
-      <p><b>MISAMO “Do not touch” M/V</b></p>
-    </div>
-    
-
-
-
-<!-- tabs service -->
-    <div class="parallax-container">
-      <div class="parallax">
-        <img src="img/SANA1.jfif" alt="">
+        <a class="mv-ext" data-mv-link href="https://www.youtube.com/watch?v=gOjG-70-D5o" target="_blank" rel="noopener">Watch on YouTube &rarr;</a>
+      </div>
+      <div class="mv-list" role="tablist" aria-label="Select MISAMO Music Video">
+        <button type="button" class="mv-item active" data-yt="gOjG-70-D5o" data-title="Confetti" data-sub="PLAY · 2026 · JYP Entertainment" data-thumb="https://i.ytimg.com/vi/gOjG-70-D5o/maxresdefault.jpg">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/gOjG-70-D5o/maxresdefault.jpg" alt="MISAMO Confetti M/V" loading="lazy"></div>
+          <div class="info"><span class="era">01 · PLAY · 2026</span><strong>Confetti</strong></div>
+        </button>
+        <button type="button" class="mv-item" data-yt="-J_w9K6DgRo" data-title="Identity" data-sub="HAUTE COUTURE · 2024 · JYP Entertainment" data-thumb="https://i.ytimg.com/vi/-J_w9K6DgRo/maxresdefault.jpg">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/-J_w9K6DgRo/maxresdefault.jpg" alt="MISAMO Identity M/V" loading="lazy"></div>
+          <div class="info"><span class="era">02 · HAUTE COUTURE · 2024</span><strong>Identity</strong></div>
+        </button>
+        <button type="button" class="mv-item" data-yt="FJWLj1-kGC0" data-title="NEW LOOK" data-sub="HAUTE COUTURE · 2024 · TWICE JAPAN OFFICIAL" data-thumb="https://i.ytimg.com/vi/FJWLj1-kGC0/sddefault.jpg">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/FJWLj1-kGC0/sddefault.jpg" alt="MISAMO NEW LOOK Music Video" loading="lazy"></div>
+          <div class="info"><span class="era">03 · HAUTE COUTURE · 2024</span><strong>NEW LOOK</strong></div>
+        </button>
+        <button type="button" class="mv-item" data-yt="woKq2sD8xho" data-title="Do not touch" data-sub="Masterpiece · 2023 · JYP Entertainment" data-thumb="https://i.ytimg.com/vi/woKq2sD8xho/sddefault.jpg">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/woKq2sD8xho/sddefault.jpg" alt="MISAMO Do not touch M/V" loading="lazy"></div>
+          <div class="info"><span class="era">04 · Masterpiece · 2023</span><strong>Do not touch</strong></div>
+        </button>
+        <button type="button" class="mv-item" data-yt="gAFgaI5D3Gc" data-title="Marshmallow" data-sub="Masterpiece · 2023 · TWICE JAPAN OFFICIAL" data-thumb="https://i.ytimg.com/vi/gAFgaI5D3Gc/maxresdefault.jpg">
+          <div class="thumb"><img src="https://i.ytimg.com/vi/gAFgaI5D3Gc/maxresdefault.jpg" alt="MISAMO Marshmallow Music Video" loading="lazy"></div>
+          <div class="info"><span class="era">05 · Masterpiece · 2023</span><strong>Marshmallow</strong></div>
+        </button>
       </div>
     </div>
+  </section>
 
-<section class="insta">
-<b><h5>Myoui Mina's Instagram Account</h5></b>
-<div class="row">
-  <div class="col s12 l10 push-l1">
-    <div class="card">
-      <div class="card-image responsive-img materialboxed">
+  <div class="band" style="background-image:url(img/SANA1.jfif)"></div>
 
-        <img src="img/minaisnta1.png" alt="" />
-        <a href="https://www.instagram.com/mina_sr_my/" class="halfway-fab btn-floating pink pulse"
-          ><i class="material-icons">send</i></a
-        >
+  <section id="photos">
+    <div class="wrap">
+      <div class="section-title">
+        <span class="num">02</span><h2>Photos</h2><p>Official TWICE gallery &amp; archive — click to enlarge</p>
       </div>
-  </div>
-  </div>
-</div>
-<b><h5>Hirai Momo's Instagram Account</h5></b>
-<div class="row">
-  <div class="col s12 l10 push-l1">
-    <div class="card">
-      <div class="card-image responsive-img materialboxed">
-
-        <img src="img/momoinsta.png" alt="" />
-        <a href="https://www.instagram.com/momo/" class="halfway-fab btn-floating pink pulse"
-          ><i class="material-icons">send</i></a
-        >
+      <div class="gallery-bar">
+        <div class="gallery-filters" role="tablist" aria-label="Filter photos by member">
+          <button type="button" class="active" data-filter="all">All (128)</button>
+          <button type="button" data-filter="momo">Momo (42)</button>
+          <button type="button" data-filter="sana">Sana (46)</button>
+          <button type="button" data-filter="mina">Mina (39)</button>
+          <button type="button" data-filter="unit">Unit (1)</button>
+        </div>
+        <span class="label" data-gallery-count>Showing 24 of 128</span>
       </div>
-  </div>
-  </div>
-</div>
-<b><h5>Minatozaki Sana's Instagram Account</h5></b>
-<div class="row">
-  <div class="col s12 l10 push-l1">
-    <div class="card">
-      <div class="card-image responsive-img materialboxed">
-
-        <img src="img/sanainsta.png" alt="" />
-        <a href="https://www.instagram.com/m.by__sana/" class="halfway-fab btn-floating pink pulse"
-          ><i class="material-icons">send</i></a
-        >
+      <div class="gallery">
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-01.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-01.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-01.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-02.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-02.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-02.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-03.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-03.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-03.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-04.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-04.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-04.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-05.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-05.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-05.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-06.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-06.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-06.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-07.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-07.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-07.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-08.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-08.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-08.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-09.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-09.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-09.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-10.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-10.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-10.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-11.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-11.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-11.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-12.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-12.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-12.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-13.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-13.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-13.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-14.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-14.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-14.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-15.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-15.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-15.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-16.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-16.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-16.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-17.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-17.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-17.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-18.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-18.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-18.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-19.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-19.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-19.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-20.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-20.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-20.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-21.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-21.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-21.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-22.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-22.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-22.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-23.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-23.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-23.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-24.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-24.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-24.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-25.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-25.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-25.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-26.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-26.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-26.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-27.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-27.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-27.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-28.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-28.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-28.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-29.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-29.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-29.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-30.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-30.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-30.png" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-31.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-31.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-31.png" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-32.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-32.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-32.png" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-33.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-33.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-33.png" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-34.png" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-34.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-34.png" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-35.png" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-35.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/gallery/mina-35.png" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-36.png" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-36.png" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-37.png" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-37.png" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-38.png" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-38.png" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/gallery/momo-39.png" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-39.png" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-40.png" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-41.png" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/gallery/sana-42.png" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/SANA1.jfif" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/MOMO2.jfif" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/MINA2.jfif" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/momo.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/mina2.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/sana.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/sana3.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="sana"><img src="img/sana4.jpg" alt="Sana" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/mina.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="momo"><img src="img/momo3.jpg" alt="Momo" loading="lazy"></figure>
+        <figure data-zoom data-member="mina"><img src="img/mina3.jpg" alt="Mina" loading="lazy"></figure>
+        <figure data-zoom data-member="unit"><img src="img/misamo1.jfif" alt="MISAMO" loading="lazy"></figure>
       </div>
-  </div>
-  </div>
-
-
-
-</section>
-<div class="parallax-container">
-  <div class="parallax">
-    <img src="img/MOMO2.jfif" alt="">
-  </div>
-</div>
-
-<!-- carousel -->
-<section class="swiper mySwiper scrollspy " id="photo">
-  <div class="phots"><h1>Photos</h1></div>
-
-<div class="gallery">
-  <div class="responsive-img materialboxed"><img src="img/SANA1.jfif" alt=""></div>
-  <div class="v-stretch responsive-img materialboxed"><img src="img/MOMO2.jfif" alt=""></div>
-  <div class="h-stretch responsive-img materialboxed"><img src="img/MINA2.jfif" alt=""></div>
-  <div class="responsive-img materialboxed"><img src="img/momo.jpg" alt=""></div>
-  <div class="responsive-img materialboxed"><img src="img/mina2.jpg" alt=""></div>
-  <div class="v-stretch responsive-img materialboxed"><img src="img/sana.jpg" alt=""></div>
-  <div class="big-stretch responsive-img materialboxed"><img src="img/sana3.jpg" alt=""></div>
-  <div class="responsive-img materialboxed"><img src="img/sana4.jpg" alt=""></div>
-  <div class="h-stretch responsive-img materialboxed"><img src="img/mina.jpg" alt=""></div>
-  <div class="responsive-img materialboxed"><img src="img/momo3.jpg" alt=""></div>
-  <div class="responsive-img materialboxed"><img src="img/mina3.jpg" alt=""></div>
-  <div class="responsive-img materialboxed"><img src="img/misamo1.jfif" alt=""></div>
-
-</div>
-      
-                
-</section>
-
-    <!-- parallax -->
-    <div class="parallax-container"><br>
-      <div class="parallax">
-        <img src="img/MINA2.jfif" alt="">
+      <div class="gallery-more">
+        <button type="button" class="btn primary" data-gallery-more>Load more (24)</button>
+        <button type="button" class="btn" data-gallery-all>Show all 128</button>
       </div>
     </div>
+  </section>
 
+  <div class="band" style="background-image:url(img/MINA2.jfif)"></div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="js/jquery.hislide.js"></script>
+  <footer>
+    <div class="wrap">
+      <div>
+        <a href="index.html" class="logo">Misamo</a>
+        <span class="label">Fan-made. All media belongs to JYP Entertainment.</span>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/twicetagram/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/JYPETWICE" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/JYPETWICE" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.tiktok.com/@twice_tiktok_official?lang=en" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/jquery.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-        $(".materialboxed").materialbox();
-        $(".parallax").parallax();
-        $(".tabs").tabs();
-        $(".datepicker").datepicker({
-          disableWeekends: true
-        });
-        $(".tooltipped").tooltip();
-        $(".scrollspy").scrollSpy();
-        $(".slide").hiSlide();
-      });
-    </script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
 </html>
